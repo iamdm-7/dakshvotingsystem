@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Voting System</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>VOTING SYSTEM</h1>
+    <p class="tagline">VOTE WITH PRIDE</p>
+  </header>
+
+  <div class="container">
+    <h2>Simple Voting System</h2>
+
+    <div>
+      <h3>Cast Your Vote</h3>
+      <div id="voteButtons"></div>
+    </div>
+
+    <div>
+      <h3>Add a New Candidate</h3>
+      <input type="text" id="newCandidate" placeholder="Enter candidate name">
+      <button onclick="addCandidate(document.getElementById('newCandidate').value)">Add Candidate</button>
+    </div>
+
+    <div>
+      <h3>Remove a Candidate</h3>
+      <input type="text" id="removeCandidate" placeholder="Enter candidate name">
+      <button onclick="removeCandidate(document.getElementById('removeCandidate').value)">Remove Candidate</button>
+    </div>
+
+    <div>
+      <h3>Find Winner</h3>
+      <button onclick="findWinners()">Find Winner</button>
+    </div>
+
+    <div>
+      <h3>Reset Votes</h3>
+      <button onclick="resetVotes()">Reset Votes</button>
+    </div>
+
+    <div>
+      <h3>Reset Candidates</h3>
+      <button onclick="resetCandidates()">Reset Candidates</button>
+    </div>
+
+    <div>
+      <h3>Results</h3>
+      <div id="resultsOutput"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; DAKSH MALHOTRA. All rights reserved for GDG MSIT.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
